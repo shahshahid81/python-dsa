@@ -392,3 +392,39 @@ class MyClass:
 
     def get_double_length(self):
         return 2 * self.get_length()
+
+
+# Read a single integer
+n = int(input("Enter a number: "))
+print(n)
+
+# Read a single string
+name = input("Enter a name: ")
+print(name)
+
+# Read two integers
+a, b = map(int, input("Enter 2 numbers: ").split())
+print(a, b)
+
+# Read a list of space-separated integers
+nums = list(map(int, input("Enter numbers: ").split()))
+print(nums)
+
+# Read n integers (one per line)
+n = int(input("Enter n: "))
+nums = [int(input(f"Enter nums[{i}]: ")) for i in range(n)]
+print(nums)
+
+# Read n strings (one per line)
+n = int(input("Enter n: "))
+strings = [input(f"Enter strings[{i}]: ") for i in range(n)]
+print(strings)
+
+# Read an n x m matrix
+n, m = map(int, input("Enter rows and columns: ").split())
+matrix = [list(map(int, input(f"Enter row[{i}]: ").split())) for i in range(n)]
+print(matrix)
+
+# Read characters of a string into a list
+chars = list(input("Enter a string: "))
+print(chars)
