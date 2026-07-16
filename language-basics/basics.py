@@ -215,9 +215,15 @@ print(s[0:2])
 print(int("123") + int("123"))
 print(str(123) + str(123))
 
-# Unicode code points (ASCII for basic English letters).
+# ord() returns the Unicode code point of a character.
+# For basic English letters, the Unicode code points are the same as their ASCII values.
 print(ord("a"))
 print(ord("b"))
+
+# chr() converts a Unicode code point back to its corresponding character.
+# Here, ord("a") gets the code point of 'a', adding 10 moves 10 positions forward,
+# and chr() converts the resulting code point back to the character 'k'.
+print(chr(ord("a") + 10))
 
 strings = ["ab", "cd", "ef"]
 print(" ".join(strings))
